@@ -2,10 +2,15 @@
 <html>
 <head>
     <title>Contact - Suger Plum Cafe</title>
-</head>   
+</head> 
+  
+<link rel="stylesheet" href="../css/style.css">
+
 <body>
     
     <h1>Contact Us</h1>
+
+    <p>We Would love to hear from you! Fill in the form below to send us a message.</p>
 
     <nav>
         <a href="home.html">Home</a>
@@ -29,11 +34,33 @@
         Email:<br>
         <input type="email" name="email"><br><br>
 
+        <label>Phone Number:</label><br>
+        <input type="tel" name="phone"><br><br>
+
         Message:<br>
         <textarea name="message"></textarea><br><br>
 
         <input type="submit" value="Send">
-    </form>
+
+        <label>Subject:</label>
+        <select name="Subject">
+            <option>General Inquiry</option>
+            <option>Order Question</option>
+            <option>Feedback</option>
+        </select><br><br>
+
+        <label>Your Message:</label><br>
+        <textarea name="message" rows="5" cols="40" required></textarea><br><br>
+
+        <label>
+            <input type="checkbox" required> I agree to be contacted
+        </label><br><br>
+
+        <input type="submit" value="Send message">
+        <input type="reset" value="Clear Form">
+</form>
+
+<p>Visit us at our cafe in Cape Town</p>
 
 </body>
 </html>
